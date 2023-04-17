@@ -27,9 +27,20 @@ UPDATE Customer SET Country='India', Salary=44000.00, Pincode='520140' WHERE Nam
 UPDATE Customer SET Country='UAE', Salary=46000.00, Pincode='529140' WHERE Name='ammu';
 
 SELECT * FROM Customer;
+
 ---------UC5-UPDATING CUSTOMER DETAILS USING NAMES------------------
-UPDATE Customer SET Country='India', Salary=65000.00, Pincode='520165' WHERE Name='Chandu';
+UPDATE Customer SET Country='India', Salary=75000.00, Pincode='520165' WHERE Name='Chandu';
+
 ---------UC6-COUNTING CUSTOMERS AS PER COUNTRY----------------------
 SELECT Country, COUNT(*) AS NumCustomers 
 FROM Customer 
 GROUP BY Country;
+
+---------UC7-SHOWING CUSTOMERS MAX,MIN,Total,AVERAGE SALARIES-------
+SELECT MAX(Salary) AS MaxSalary FROM Customer; 
+
+SELECT MIN(Salary) AS MinSalary FROM Customer; 
+
+SELECT SUM(Salary) AS MinSalary FROM Customer;
+
+SELECT AVG(Salary) AS MinSalary FROM Customer;  
