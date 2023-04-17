@@ -24,5 +24,8 @@ ALTER TABLE Customer ADD Pincode VARCHAR(20);
 UPDATE Customer SET Country ='USA', Salary=55000.00, Pincode='424001' WHERE Name='Raji';
 UPDATE Customer SET Country='Canada', Salary=66000.00, Pincode='456001' WHERE Name='Teju';
 UPDATE Customer SET Country='India', Salary=44000.00, Pincode='520140' WHERE Name='Chandu';
+UPDATE Customer SET Country='UAE', Salary=46000.00, Pincode='529140' WHERE Name='ammu';
 
 SELECT * FROM Customer;
+---------UC5-UPDATING CUSTOMER DETAILS USING NAMES------------------
+UPDATE Customer SET Country='India', Salary=65000.00, Pincode='520165' WHERE Name='Chandu';
